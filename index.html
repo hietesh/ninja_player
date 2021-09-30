@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ninja Studio</title>
+  </head>
+  <body>
+    <header id="top-header" class="flex">
+      <div class="left-section">
+        <div class="brand">
+          <a href="index.html" style="cursor: pointer;"><img src="assets/images/logo_big.png" alt="" srcset="" /></a>
+        </div>
+        <div class="favs">
+          <h4 class="title">Favourites</h4>
+        </div>
+      </div>
+      <div class="right-section">
+        <!--Song Search -->
+        <div id="song-search">
+          <i class="fas fa-search"></i>
+          <input type="text" name="search" placeholder="Search" />
+          <i class="fas fa-microphone"></i>
+        </div>
+        <!-- Notification -->
+        <div class="notification">
+          <div class="notification-container">
+            <i class="fas fa-bell"></i>
+            <div class="notification-dot"></div>
+          </div>
+        </div>
+        <!-- User profile pic -->
+        <div class="profile-pic">
+          <img src="assets/images/profle pic.jpeg" alt="Profile Picture" />
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <div class="bifurcate container flex">
+      <main>
+        <!-- carosuel with only html and css only  -->
+        <section id="slider">
+          <input type="radio" name="slider" id="s1" />
+          <input type="radio" name="slider" id="s2" />
+          <input type="radio" name="slider" id="s3" checked />
+          <input type="radio" name="slider" id="s4" />
+          <input type="radio" name="slider" id="s5" />
+          <label for="s1" id="slide1">
+            <img
+              src="assets/images/carousel/img1.jpg"
+              height="100%"
+              width="100%"
+            />
+          </label>
+          <label for="s2" id="slide2">
+            <img
+              src="assets/images/carousel/img2.jpg"
+              height="100%"
+              width="100%"
+            />
+          </label>
+          <label for="s3" id="slide3">
+            <img
+              src="assets/images/carousel/img3.jpg"
+              height="100%"
+              width="100%"
+            />
+          </label>
+          <label for="s4" id="slide4">
+            <img
+              src="assets/images/carousel/img4.jpg"
+              height="100%"
+              width="100%"
+            />
+          </label>
+          <label for="s5" id="slide5">
+            <img
+              src="assets/images/carousel/img5.jpg"
+              height="100%"
+              width="100%"
+            />
+          </label>
+        </section>
+        <!-- Latest Releases -->
+        <section class="latest-release">
+            <h3 class="title">Latest Release</h3>
+            <div class="latest-releases">
+               <div class="releases flex">
+                  <div class="left-section">
+                    <img src="assets/images/latest-release/latest_release.png" alt="release">
+                    <div class="song-title">
+                        <h4 class="title">Onism</h4>
+                        <p class='times'><time>AUG 11,2017</time></p>
+                    </div>
+                  </div>
+                  <div class="right-section">
+                    <a href="#"><i class="fas fa-ellipsis-h block"></i></a>
+                    <p class="time"><time>4:44</time></p>
+                  </div>
+               </div>
+               <div class="releases flex">
+                <div class="left-section">
+                  <img src="assets/images/latest-release/latest_release.png" alt="release">
+                  <div class="song-title">
+                      <h4 class="title">Onism</h4>
+                      <p class='times'><time>AUG 11,2017</time></p>
+                  </div>
+                </div>
+                <div class="right-section">
+                  <a href="#"><i class="fas fa-ellipsis-h block"></i></a>
+                  <p class="time"><time>4:44</time></p>
+                </div>
+             </div>
+
+
+             <div class="releases flex">
+              <div class="left-section">
+                <img src="assets/images/latest-release/latest_release.png" alt="release">
+                <div class="song-title">
+                    <h4 class="title">Onism</h4>
+                    <p class='times'><time>AUG 11,2017</time></p>
+                </div>
+              </div>
+              <div class="right-section">
+                <a href="#"><i class="fas fa-ellipsis-h block"></i></a>
+                <p class="time"><time>4:44</time></p>
+              </div>
+           </div>
+
+           <div class="releases flex">
+            <div class="left-section">
+              <img src="assets/images/latest-release/latest_release.png" alt="release">
+              <div class="song-title">
+                  <h4 class="title">Onism</h4>
+                  <p class='times'><time>AUG 11,2017</time></p>
+              </div>
+            </div>
+            <div class="right-section">
+              <a href="#"><i class="fas fa-ellipsis-h block"></i></a>
+              <p class="time"><time>4:44</time></p>
+            </div>
+         </div>
+            </div>
+            <div id="dropdown-show" class="drop-down">
+              <ul>
+                <li><a href="#">Playlist</a></li>
+                <li><a href="#">Favourite Songs</a></li>
+              </ul>
+            </div>
+        </section>
+        <!-- popular artists -->
+        <section class="popular-artist">
+          <h3 class="title">Popular Artists</h3>
+            <div class="artists">
+              <div class="artist">
+                <a href="artist.html"><img src="assets/images/artist/adele.jpg" alt="adele"></a>
+                <h5>Adele</h5>
+             </div> 
+             <div class="artist">
+              <a href="artist.html"><img src="assets/images/artist/billie eilish.jpg" alt="billie eilish"></a>
+                <h5>Billie Eilish</h5>
+             </div>
+             <div class="artist">
+              <a href="artist.html"><img src="assets/images/artist/drake.jpg" alt="drake"></a>
+               <h5>Drake</h5>
+             </div>
+             <div class="artist">
+              <a href="artist.html"><img src="assets/images/artist/ed sheeran.jpg" alt="ed sheeran"></a>
+               <h5>Ed Sheeran</h5>
+             </div>
+             <div class="artist">
+              <a href="artist.html"><img src="assets/images/artist/posty.png" alt="Post Malone"></a>
+               <h5>Post Malone</h5>
+             </div> 
+             <div class="artist">
+              <a href="artist.html"><img src="assets/images/artist/eminem.jpg" alt="Eminem"></a>
+              <h5>Eminem</h5>
+            </div> 
+            </div>    
+        </section>
+        <!-- stations -->
+        <div class="music-themes">
+          <!-- this div will be the logo of music themes, see the output, the one with 3 squares/rects  -->
+          <!-- the logo with orange, green and yellow color -->
+          <div class="stations">
+              <div id="div1">
+                  <div id="div2">
+                      <div id="div3">
+                          <img src="assets/icons/play.png">
+                          <p>Stations</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- this is the content part of them themes -->
+          <!-- the one which changes colors on hover -->
+          <div class="theme-main">
+              <div class="theme-content">
+                  <img src="assets/images/stations/chill.jpg">
+                  <p>Vibe</p>
+              </div>
+              <div class="theme-content">
+                  <img src="assets/images/stations/rock.jpg">
+                  <p>Rock</p>
+              </div>
+              <div class="theme-content">
+                  <img src="assets/images/stations/love.jpg">
+                  <p>Love</p>
+              </div>
+              <div class="theme-content">
+                  <img src="assets/images/stations/pop.jpg">
+                  <p>Pop</p>
+              </div>
+              <div class="theme-content">
+                  <img src="assets/images/stations/retro.jpg">
+                  <p>Retro</p>
+              </div>
+              <div class="theme-content">
+                  <img src="assets/images/stations/workout.jpg">
+                  <p>GYM</p>
+              </div>
+          </div>
+          
+        </div>
+        <div class="music-themes-2">
+        <!-- 3 divs content -->
+        <div class="outer-div">
+            <div class="inner-div">
+                <span>Party</span>
+            </div>
+        </div>
+        <div class="outer-div">
+            <div class="inner-div">
+                <span>Electronic</span>
+            </div>
+        </div>
+        <div class="outer-div">
+            <div class="inner-div">
+                <span>Travel</span>
+            </div>
+        </div>
+        </div>
+        <!-- lastest English -->
+        <section class="latest-english">
+          <h3 class="title">Latest English</h3>
+          <div class="songs flex">
+             <div class="song">
+                <img src="assets/images/songs/latest_english/I'll Wait.jpg" alt="i'll Wait">
+                <div class="desc">
+                   <p>i'll Wait</p>
+                   <p class="times">AUG 11,2017</p>
+                </div>
+             </div>
+             <div class="song">
+              <img src="assets/images/songs/latest_english/ily.jpg" alt="ily">
+              <div class="desc">
+                 <p>ily</p>
+                 <p class="times">AUG 11,2017</p>
+              </div>
+             </div>
+             <div class="song">
+              <img src="assets/images/songs/latest_english/let me go.jpg" alt="let Me go">
+              <div class="desc">
+                 <p>Let Me Go</p>
+                 <p class="times">AUG 11,2017</p>
+              </div>
+             </div>
+             <div class="song">
+              <img src="assets/images/songs/latest_english/roar.jpg" alt="roar">
+              <div class="desc">
+                 <p>Roar</p>
+                 <p class="times">AUG 11,2017</p>
+              </div>
+             </div>
+             <div class="song">
+              <img src="assets/images/songs/latest_english/toosie slide.jpg" alt="toosie">
+              <div class="desc">
+                 <p>toosie</p>
+                 <p class="times">AUG 11,2017</p>
+              </div>
+             </div>
+             <div class="song">
+              <img src="assets/images/songs/latest_english/uptown funk.png" alt="ily">
+              <div class="desc">
+                 <p>Uptown Funk</p>
+                 <p class="times">AUG 11,2017</p>
+              </div>
+             </div>  
+          </div>
+        </section> 
+        <!-- latest Hindi -->
+        <section class="latest-hindi">
+          <h3 class="title">Latest Hindi</h3>
+          <div class="songs flex">
+          <div class="song">
+          <img src="assets/images/songs/latest_hindi/baarish.jpeg" alt="baarish">
+          <div class="desc">
+             <p>Baarish</p>
+             <p class="times">AUG 11,2017</p>
+          </div>
+          </div>
+          <div class="song">
+        <img src="assets/images/songs/latest_hindi/galiyaan.jpg" alt="galiyaan">
+        <div class="desc">
+           <p>Galiyaan</p>
+           <p class="times">AUG 11,2017</p>
+        </div>
+          </div>
+          <div class="song">
+          <img src="assets/images/songs/latest_hindi/giveme some sunshine.jpg" alt="Give me some sunshine">
+          <div class="desc">
+            <p>Sunshine</p>
+            <p class="times">AUG 11,2017</p>
+          </div>
+          </div>
+          <div class="song">
+            <img src="assets/images/songs/latest_hindi/kaun tujhe.jpg" alt="kaun tuje">
+            <div class="desc">
+              <p>Kaun Tujhe</p>
+              <p class="times">AUG 11,2017</p>
+            </div>
+          </div>
+          <div class="song">
+            <img src="assets/images/songs/latest_hindi/tera ban jaunga.jpg" alt="Banjaunga">
+            <div class="desc">
+              <p>Banjaunga</p>
+              <p class="times">AUG 11,2017</p>
+            </div>
+          </div>
+          <div class="song">
+            <img src="assets/images/songs/latest_hindi/tere sang yara.jpg" alt="tere sang yaara">
+            <div class="desc">
+              <p>Tere Sang</p>
+              <p class="times">AUG 11,2017</p>
+            </div>
+          </div>
+         </div>
+        </section>
+      </main>
+      <!-- Aside section -->
+      <aside>
+        <!-- Top Section -->
+        <div class="queue-top">
+          <div class="queue-link flex">
+            <h3>Playlist</h3>
+            <a href="#dropdown-show" class="q-link">
+              <span>Queue</span><i class="fas fa-chevron-down"></i>
+              <div id="dropdown-show" class="drop-down">
+                <ul>
+                  <li><a href="#">Playlist</a></li>
+                  <li><a href="#">Favourite Songs</a></li>
+                </ul>
+              </div> 
+            </a>
+        </div>
+        </div>
+        <!-- queue items -->
+        <div class="queue-items">
+           <div class="item">
+            <div class="left-section">
+            <p>01</p>
+            <img src="assets/images/queue items/1.png"/>
+            <div>
+              <h5 class="title">Mirage</h5>
+              <p>Else</p>
+            </div>
+          </div>
+          <div class="right-section">  
+            <i class="far fa-heart"></i>
+          </div>  
+          </div>
+          <div class="item">
+            <div class="left-section">
+              <p>02</p>
+              <img src="assets/images/queue items/2.png"/>
+              <div>
+                 <h5 class="title">Worry Bout Us</h5>
+                 <p>Rosie Lowe</p>
+              </div>
+            </div>
+            <div class="right-section">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <div class="item">
+            <div class="left-section">
+            <p>03</p>
+            <img src="assets/images/queue items/3.png"/>
+            <div>
+              <h5 class="title">New Skin</h5>
+              <p>Flume</p>
+            </div>
+            </div>
+            <div class="right-section">
+            <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <div class="item">
+            <div class="left-section">
+            <p>04</p>
+            <img src="assets/images/queue items/4.png"/>
+            <div>
+              <h5 class="title">Worry Bout Us</h5>
+              <p>Rosie Lowe</p>
+            </div>
+          </div>
+          <div class="right-section">
+            <i class="far fa-heart"></i>
+          </div>
+          </div>
+          <div class="item ">
+            <div class="left-section">
+            <p>05</p>
+            <img src="assets/images/queue items/5.png"/>
+            <div>
+              <h5 class="title">New Skin</h5>
+              <p>Flume</p>
+            </div>
+            </div>
+            <div class="right-section">
+            <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <div class="item ">
+            <div class="left-section">
+            <p>06</p>
+            <img src="assets/images/queue items/2.png"/>
+            <div>
+              <h5 class="title">Mirage</h5>
+              <p>Else</p>
+            </div>
+            </div>
+            <div class="right-section">
+            <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <div class="item ">
+            <div class="left-section">
+            <p>07</p>
+            <img src="assets/images/queue items/3.png"/>
+            <div>
+              <h5 class="title">New Skin</h5>
+              <p>Flume</p>
+            </div></div>
+            <div class="right-section">
+            <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <div class="item ">
+            <div class="left-section">
+            <p>08</p>
+            <img src="assets/images/queue items/1.png"/>
+            <div>
+              <h5 class="title">Mirage</h5>
+              <p>Else</p>
+            </div>
+            </div>
+            <div class="right-section">
+            <i class="far fa-heart"></i>
+          </div>
+          </div>
+          <div class="item">
+          <div class="left-section">
+            <p>09</p>
+            <img src="assets/images/queue items/5.png"/>
+            <div>
+              <h5 class="title">Worry Bout Us</h5>
+              <p>Rosie Lowe</p>
+            </div>
+            </div>
+            <div class="right-section">
+            <i class="far fa-heart"></i>
+          </div>
+          </div>
+          <div class="item">
+            <div class="left-section">
+            <p>10</p>
+            <img src="assets/images/queue items/4.png"/>
+            <div>
+              <h5 class="title">Mirage</h5>
+              <p>Else</p>
+            </div>
+            </div>
+            <div class="right-section">
+            <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <div class="item ">
+            <div class="left-section">
+            <p>11</p>
+            <img src="assets/images/queue items/1.png"/>
+            <div>
+              <h5 class="title">Worry Bout Us</h5>
+              <p>Rosie Lowe</p>
+            </div>
+            </div>
+            <div class="right-section">
+            <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <div class="item ">
+            <div class="left-section">
+            <p>12</p>
+            <img src="assets/images/queue items/2.png"/>
+            <div>
+              <h5 class="title">Mirage</h5>
+              <p>Else</p>
+            </div>
+            </div>
+            <div class="right-section">
+            <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <div class="item ">
+            <div class="left-section">
+            <p>13</p>
+            <img src="assets/images/queue items/3.png"/>
+            <div>
+              <h5 class="title">New Skin</h5>
+              <p>Flume</p>
+            </div></div>
+            <div class="right-section">
+             <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <div class="item ">
+            <div class="left-section">
+            <p>14</p>
+            <img src="assets/images/queue items/5.png"/>
+            <div>
+              <h5 class="title">Mirage</h5>
+              <p>Else</p>
+            </div>
+            </div>
+            <div class="right-section">
+            <i class="far fa-heart"></i></div>
+          </div>
+          <div class="item ">
+            <div class="left-section">
+            <p>15</p>
+            <img src="assets/images/queue items/3.png"/>
+            <div>
+              <h5 class="title">New Skin</h5>
+              <p>Flume</p>
+            </div></div>
+            <div class="right-section">
+             <i class="far fa-heart"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <!-- music player -->
+    <footer>
+      <div class="active-song-description">
+          <!-- song image -->
+          <div id="song-image">
+              <img src="assets/images/queue items/1.png">
+          </div>
+          <!-- song name and author -->
+          <div class="song-desc">
+              <div>
+                  Lorem Ipsum
+              </div>
+              <div>
+                  Hitesh
+              </div>
+          </div>
+              <!-- heart icon and ban icon -->
+          <div class="heart-and-ban-icon">
+              <span>
+              <i class="far fa-heart"></i>
+              </span>
+              <span>
+                  <i class="fas fa-ban"></i>
+              </span>
+          </div>
+      </div>
+      <!-- these are the main player controls -->
+      <div class="player">
+          <div class="controls">
+              <div><i class="fas fa-random"></i></div>
+              <div> <i class="fas fa-step-backward"></i></div>
+              <div><i class="fas fa-pause-circle"></i></div>
+              <div><i class="fas fa-step-forward"></i></div>
+              <div><i class="fas fa-redo"></i></div>
+          </div>
+          <div id="slider">
+              <!-- current time -->
+              <div class="time">
+                  1:39
+              </div>
+              <div class="slidecontainer">
+                  <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+              </div>
+              <!-- total time -->
+              <div class="time">
+                  4:44
+              </div>
+          </div>
+      </div>
+      <div class="extras">
+          <div>
+            <i class="fas fa-list-ul"></i>
+          </div>
+          <div>
+              <i class="fas fa-laptop"></i>
+          </div>
+          <div>
+             <i class="fas fa-volume-up"></i>
+          </div>
+          <div class="slidecontainer" style="width:30%;">
+              <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+          </div>
+          <div><i class="fas fa-expand-alt"></i>
+          </div>
+      </div>
+  </footer>
+  </body>
+</html>
